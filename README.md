@@ -1,5 +1,7 @@
 # Papaya · 资金费率套利系统作品集
 
+[![Papaya CI](https://github.com/neo770013-rgb/Papaya-Portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/neo770013-rgb/Papaya-Portfolio/actions/workflows/ci.yml)
+
 **让套利决策看得见：从行情扫描、成本过滤，到收益归因与策略解释。**
 
 [在线体验](https://papaya-arbitrage-portfolio.alylwxy.chatgpt.site/) · [费率扫描](https://papaya-arbitrage-portfolio.alylwxy.chatgpt.site/#/scanner) · [工程说明](https://papaya-arbitrage-portfolio.alylwxy.chatgpt.site/#/project) · [作者 @neo770013-rgb](https://github.com/neo770013-rgb)
@@ -154,6 +156,8 @@ npm run dev
 | `npm run preview` | 在本地预览构建结果，地址以终端输出为准 |
 
 ## 测试与数据一致性
+
+每次向 `main` 推送代码或创建 Pull Request，GitHub Actions 都会自动安装锁定版本的依赖，运行回归测试，并执行 TypeScript 编译检查与生产构建。也可以在 [Actions 页面](https://github.com/neo770013-rgb/Papaya-Portfolio/actions/workflows/ci.yml)手动触发。此流程用于验证代码，不部署网站，也不需要交易所密钥。
 
 当前回归测试包含 3 组检查，重点验证以下约束：
 
