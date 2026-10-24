@@ -206,3 +206,18 @@ input:focus-visible,button:focus-visible,a:focus-visible {outline:2px solid #DFE
 @media(min-width:1001px){.header-inner{gap:20px;}.header-inner nav{gap:20px;}}
 @media(max-width:1000px) and (min-width:721px){.github-header{padding:9px;font-size:10px;gap:6px;}.header-inner{gap:15px}.header-inner nav{gap:12px}.nav-link{font-size:12px}.brand{font-size:21px}}
 @media(max-width:720px){.github-header{position:absolute;right:0;top:18px;padding:8px 10px;font-size:10px;gap:6px}.github-source-card{max-width:100%;padding:13px}.github-source-card small{font-size:9px}}
+
+/* Keep all destinations visible and controls usable on narrow touch screens. */
+@media (max-width:720px) {
+  .header-inner nav {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;overflow:visible;margin-top:8px;}
+  .nav-link {display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 0;font-size:12px;}
+  .github-header {min-height:44px;top:14px;}
+  .hero-copy h1 {font-size:clamp(44px,12vw,62px);letter-spacing:-2px;}
+  .performance-chart-top {flex-wrap:wrap;gap:14px;}
+  .performance-ranges button,.scenario-tabs button {min-height:44px;min-width:44px;}
+  .performance-metrics>div {min-width:0;}
+  .performance-metrics strong {font-size:clamp(20px,6.4vw,25px);}
+  .performance-svg:focus-visible {outline:2px solid #DFE104;outline-offset:3px;}
+  main input[type="text"] {font-size:16px;}
+  main button {min-height:44px;}
+}

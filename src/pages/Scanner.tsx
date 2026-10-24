@@ -213,9 +213,10 @@ export default function Scanner() {
         <input
           type="text"
           placeholder="搜索交易对..."
+          aria-label="搜索交易对"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="bg-transparent border-0 border-b-2 border-border text-foreground text-lg uppercase tracking-wide h-12 w-80 outline-none font-sans transition-colors focus:border-accent"
+          className="scanner-search bg-transparent border-0 border-b-2 border-border text-foreground text-lg uppercase tracking-wide h-12 w-full min-w-0 lg:w-80 outline-none font-sans transition-colors focus:border-accent"
         />
 
         <div className="flex items-center gap-3 flex-wrap">
